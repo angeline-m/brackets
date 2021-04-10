@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'milkshake';
+    src: url('../fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden,
+nav h2 {
+    display: none;
+}
+
+/* General Styles */
+
+h1 a,
+h2 {
+    font-family: 'milkshake', cursive;
+}
+
+p,
+li,
+a {
+    font-family: 'B612', sans-serif;
+    color: #111110;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #171816;
+    position: relative;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 15px 15px;
+}
+
+h1 a {
+    font-size: calc((32/16)*1rem);
+    color: #dbecec;
+}
+
+.menu-btn svg {
+    fill: #dbecec;
+    height: calc((32/16)*1rem);
+}
+
+/* Menu Styles */
+
+nav {
+    padding: 0 16px;
+    position: absolute;
+    background-color: #171816;
+    width: calc(100% - 32px);
+    z-index: 100;
+    line-height: 4;
+    top: 100%;
+    left: 0;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #dbecec;
+}
+
+nav li a {
+    display: flex;
+    align-items: center;
+}
+
+nav li:nth-child(3) {
+    border-bottom: 1px solid #706b5e;
+}
+
+.header-btn {
+    position: absolute;
+    padding: 10px 16px 30px;
+    top: 357%;
+    z-index: 1000;
+    background-color: #171816;
+    left: 0;
+    right: 0;
+    line-height: 4;
+}
+
+.header-btn a {
+    padding: 10px;
+    border: 1px solid #dbecec;
+    margin-right: 17px;
+    color: #dbecec;
+}
+
+nav svg {
+    fill: #c6552c;
+    height: 2rem;
+    margin-right: 10px;
+}
+
+/* Banner Styles */
+
+.banner {
+    background-image: url(../img/banner-typewriter-sm.jpg);
+    height: 480px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(23, 24, 22, 0.52);
+    height: 480px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/* Floating Box Style */
+
+main section:first-of-type {
+    background-color: #dbecec;
+    position: absolute;
+    top: 48px;
+    left: 16px;
+    right: 16px;
+    text-align: center;
+    padding: 55px 15px;
+}
+
+main section:first-of-type h2 {
+    font-size: calc((39/16)*1rem);
+    color: #171816;
+}
+
+
+main section:first-of-type div {
+    width: 17px;
+    height: 3px;
+    background-color: #c6552c;
+    margin: 12px auto 25px;
+}
+
+/* Main Styles */
+
+main {
+    position: relative;
+}
+
+main a {
+    text-transform: uppercase;
+}
+
+main section:nth-of-type(2) p:first-of-type,
+.guides-image > div p,
+footer > div > p,
+footer > div > p + p {
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+}
+
+main section:nth-of-type(2) p:first-of-type,
+.guides-image > div p {
+    color: #c6552c;
+}
+
+main section:nth-of-type(2) h2,
+.guides-image > div h2 {
+    font-size: calc((30/16)*1rem);
+    color: #dbecec;
+}
+
+/* Article Section Styles */
+
+main section:nth-of-type(2) {
+    background-color: #171816;
+    background-image: url(../img/felt-texture.png);
+    padding: 75px 16px 90px;
+}
+
+main section:nth-of-type(2) p,
+main section:nth-of-type(2) a {
+    color: #dbecec;
+}
+
+main section:nth-of-type(2) p:first-of-type {
+    margin-bottom: 10px;
+}
+
+main section:nth-of-type(2) h2 {
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(2) p:last-of-type {
+    padding-bottom: 50px;
+}
+
+main section:nth-of-type(2) a {
+    padding: 16px;
+    border-top: 1px solid #dbecec;
+    border-bottom: 1px solid #dbecec;
+}
+
+/* Guides Section Styles */
+
+main section:last-of-type {
+    background-color: #dbecec;
+    padding: 70px 16px 90px;
+}
+
+.guides-image > div {
+    background-color: #1d1e1c;
+    background-image: url(../img/felt-texture.png);
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    top: -40px;
+    padding: 20px 16px 10px;
+}
+
+.guides-image > div p {
+    margin-bottom: 12px;
+}
+
+.guides-image {
+    background-image: url(../img/guides-woman.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 375px;
+    margin: 40px 0 20px;
+    position: relative;
+}
+
+main section:last-of-type ul {
+    list-style-type: disc;
+    padding-left: 17px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+main section:last-of-type div a {
+    padding: 16px;
+    border-top: 1px solid #c6552c;
+    border-bottom: 1px solid #c6552c;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #171816;
+    background-image: url(../img/felt-texture.png);
+    text-align: right;
+    padding: 70px 16px 40px;
+}
+
+footer > div.container > p,
+footer > div.container > p + p {
+    font-size: calc((70/16)*1rem);
+    color: #171816;
+}
+
+footer > div > div p {
+    font-size: calc((14/16)*1rem);
+    color: #dbecec;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+footer > div > div {
+    margin: 20px 5px 0 0;
+}
+
+
+@media (min-width: 1300px) {
+
+    /* General Styling */
+
+    body {
+        font-size: 1.125rem;
+    }
+
+    .container {
+        width: calc(1300px - 32px);
+        margin: 0 auto;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .header-btn a:hover,
+    main section:nth-of-type(2) a:hover {
+        background-color: #dbecec;
+        color: #171816;
+    }
+
+    /* Header & Navigation Styles */
+
+    header {
+        padding: 5px 16px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    header > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 16px;
+    }
+
+    nav,
+    .header-btn {
+        position: static;
+        padding: 0;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 40px;
+    }
+
+    nav li:nth-child(3) {
+        border: none;
+        margin-right: 0;
+    }
+
+    nav li a:hover {
+        font-style: italic;
+    }
+
+    /* Banner Styles */
+
+    .banner {
+        background-image: url(../img/banner-typewriter-lg.jpg);
+    }
+
+    .banner,
+    .overlay {
+        height: 487px;
+    }
+
+    /* Floating Box Styles */
+
+    main section:first-of-type {
+        top: 110px;
+        padding: 85px 45px;
+        width: 500px;
+        left: 130px;
+        right: 670px;
+    }
+
+    main section:first-of-type h2 {
+        font-size: calc((48/16)*1rem);
+    }
+
+    /* Article Section Styles */
+
+    main section:nth-of-type(2) {
+        padding-bottom: 140px;
+    }
+
+    main section:nth-of-type(2) div {
+        width: auto;
+        margin-left: calc(130px + 500px + 90px + 16px);
+    }
+
+    /* Guides Section */
+
+    main section:last-of-type > div {
+        display: flex;
+    }
+
+    .guides-image {
+        max-width: 100%;
+        flex-basis: 50%;
+        margin-right: 60px;
+    }
+
+    .guides-image div {
+        width: 500px;
+        left: 130px;
+        right: 670px;
+    }
+
+    main section:last-of-type > div a:hover {
+        background-color: #c6552c;
+        color: #f5e7cb;
+    }
+
+    /* Footer Styles */
+    
+    footer {
+        padding-bottom: 45px;
+    }
+    
+    footer > div > p,
+    footer > div > p + p {
+        text-transform: uppercase;
+        font-size: calc((150/16) * 1rem);
+    }
+    
+    footer > div > div {
+        display: flex;
+    }
+    
+    footer > div > div > p {
+        margin-right: 5px;
+    }
+
+}

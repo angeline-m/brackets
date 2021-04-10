@@ -1,2 +1,2 @@
 # brackets
- Brackets responsive homepage
+Responsive homepage for a fictional website named Brackets. Utilized responsive layouts and images.
